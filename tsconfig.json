@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "module": "commonjs",
+    "strict": true,
+    "lib": [
+      "esnext"
+    ],
+    "allowJs": false,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "outDir": "lib/",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
