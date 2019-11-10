@@ -2,6 +2,12 @@
   "name": "jest-graphviz",
   "version": "0.0.1",
   "author": "kamiazya <yuki@kamiazya.tech>",
+  "description": "A plugin for jest that supports graphviz integration.",
+  "keywords": [
+    "jest",
+    "graphviz",
+    "dot"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
