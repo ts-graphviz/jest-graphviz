@@ -2,7 +2,7 @@
 
 # jest-graphviz
 
-A plugin for [jest](https://jestjs.io/) that supports graphviz integration.
+A plugin for [jest](https://jestjs.io/) that supports [graphviz](https://graphviz.gitlab.io/) integration.
 
 ## Installation
 
@@ -22,7 +22,34 @@ yarn add -D jest-graphviz
 npm install --save-dev jest-graphviz
 ```
 
-### Requirement
+## Configuration
+
+Import `jest-graphviz` with the script specified in [`setupFilesAfterEnv`](https://jestjs.io/docs/en/configuration#setupfilesafterenv-array).
+
+### Example
+
+#### `jest.config.js`
+
+```javascript
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  verbose: true,
+  collectCoverage: true,
+  setupFilesAfterEnv: [
+    // Add this.
+    '<rootDir>/config/jest/setup-jest.ts',
+  ],
+};
+```
+
+#### `config/jest/setup-jest.ts`
+
+```typescript
+import 'jest-graphviz';
+```
+
+## Requirement
 
 This extension requires Graphviz.
 If you don't have it installed, install it here[here](https://graphviz.gitlab.io/download/).
