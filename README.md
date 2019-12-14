@@ -56,7 +56,7 @@ If you don't have it installed, install it here[here](https://graphviz.gitlab.io
 
 ## Usage
 
-### toBeValidDot
+### `toBeValidDot`
 
 ```typescript
 describe('toBeValidDot test', () => {
@@ -70,7 +70,17 @@ describe('toBeValidDot test', () => {
     expect(dot).not.toBeValidDot();
   });
 });
+```
 
+### `toBeValidDotAndMatchSnapshot`
+
+```typescript
+describe('toBeValidDotAndMatchSnapshot test', () => {
+  test('matcher works', () => {
+    const dot = 'digraph g { a -> b; }';
+    expect(dot).toBeValidDotAndMatchSnapshot();
+  });
+});
 ```
 
 ## License
