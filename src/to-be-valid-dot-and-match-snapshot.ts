@@ -15,7 +15,11 @@ declare global {
 }
 
 export function toBeValidDotAndMatchSnapshotMatcher(this: any, dot: string): jest.CustomMatcherResult {
-  return isValidDot(dot) && toMatchSnapshot.call(this, dot);
+  const result = isValidDot(dot);
+  if (result.pass) {
+    return toMatchSnapshot.call(this, dot);
+  }
+  return result;
 }
 
 expect.extend({ toBeValidDotAndMatchSnapshot: toBeValidDotAndMatchSnapshotMatcher });
