@@ -1,4 +1,4 @@
-import { dotStdin } from './dot-stdin';
+import { dotStdin } from './dot-adapter';
 
 export function isValidDot(dot: string): jest.CustomMatcherResult {
   let pass: boolean;
