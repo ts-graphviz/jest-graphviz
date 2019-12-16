@@ -1,4 +1,4 @@
-[![GitHub Action](https://github.com/kamiazya/jest-graphviz/workflows/NodeCI/badge.svg)](https://github.com/kamiazya/jest-graphviz/actions?workflow=NodeCI) [![npm version](https://badge.fury.io/js/jest-graphviz.svg)](https://badge.fury.io/js/jest-graphviz) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![GitHub Action](https://github.com/kamiazya/jest-graphviz/workflows/NodeCI/badge.svg)](https://github.com/kamiazya/jest-graphviz/actions?workflow=NodeCI) [![npm version](https://badge.fury.io/js/jest-graphviz.svg)](https://badge.fury.io/js/jest-graphviz) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Test Coverage](https://api.codeclimate.com/v1/badges/b5856ac3f3ced5b64a05/test_coverage)](https://codeclimate.com/github/kamiazya/jest-graphviz/test_coverage)
 
 # jest-graphviz
 
