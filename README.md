@@ -83,6 +83,17 @@ describe('toBeValidDotAndMatchSnapshot test', () => {
 });
 ```
 
+### `toMatchDotJsonSnapshot`
+
+```typescript
+describe('toMatchDotJsonSnapshot test', () => {
+  test('matcher works', () => {
+    const dot = 'digraph g { a -> b; }';
+    expect(dot).toMatchDotJsonSnapshot();
+  });
+});
+```
+
 ## License
 
 This software is released under the MIT License, see LICENSE.
