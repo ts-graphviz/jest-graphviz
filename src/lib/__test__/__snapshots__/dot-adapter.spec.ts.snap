@@ -1,21 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`dotStdin test valid dot 1`] = `
-"digraph g {
-	graph [bb=\\"0,0,54,108\\"];
-	node [label=\\"\\\\N\\"];
-	a	 [height=0.5,
-		pos=\\"27,90\\",
-		width=0.75];
-	b	 [height=0.5,
-		pos=\\"27,18\\",
-		width=0.75];
-	a -> b	 [pos=\\"e,27,36.413 27,71.831 27,64.131 27,54.974 27,46.417\\"];
-}
-"
-`;
-
-exports[`jsonStdin test valid dot 1`] = `
+exports[`dotJsonStdin test valid dot 1`] = `
 Object {
   "_subgraph_cnt": 0,
   "directed": true,
@@ -41,4 +26,13 @@ Object {
   ],
   "strict": false,
 }
+`;
+
+exports[`dotPlainStdin test valid dot 1`] = `
+"graph 1 0.75 1.5
+node a 0.375 1.25 0.75 0.5 a solid ellipse black lightgrey
+node b 0.375 0.25 0.75 0.5 b solid ellipse black lightgrey
+edge a b 4 0.375 0.99766 0.375 0.89071 0.375 0.76353 0.375 0.64468 solid black
+stop
+"
 `;

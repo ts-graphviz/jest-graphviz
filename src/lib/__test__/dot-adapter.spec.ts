@@ -1,31 +1,31 @@
-import { dotStdin, jsonStdin } from '../dot-adapter';
+import { dotJsonStdin, dotPlainStdin } from '../dot-adapter';
 
-describe('dotStdin test', () => {
+describe('dotPlainStdin test', () => {
   test('valid dot', () => {
     const dot = 'digraph g { a -> b; }';
-    const result = dotStdin(dot);
+    const result = dotPlainStdin(dot);
     expect(result).toMatchSnapshot();
   });
 
   test('invalid dot, to throw error', () => {
     const dot = 'invalid';
     expect(() => {
-      dotStdin(dot);
+      dotPlainStdin(dot);
     }).toThrow();
   });
 });
 
-describe('jsonStdin test', () => {
+describe('dotJsonStdin test', () => {
   test('valid dot', () => {
     const dot = 'digraph g { a -> b; }';
-    const result = jsonStdin(dot);
+    const result = dotJsonStdin(dot);
     expect(result).toMatchSnapshot();
   });
 
   test('invalid dot, to throw error', () => {
     const dot = 'invalid';
     expect(() => {
-      jsonStdin(dot);
+      dotJsonStdin(dot);
     }).toThrow();
   });
 });

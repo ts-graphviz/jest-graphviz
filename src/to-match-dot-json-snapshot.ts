@@ -1,9 +1,9 @@
 import { toMatchSnapshot } from 'jest-snapshot';
-import { jsonStdin } from './lib/dot-adapter';
+import { dotJsonStdin } from './lib/dot-adapter';
 
 export function toMatchDotJsonSnapshotMatcher(this: any, dot: string): jest.CustomMatcherResult {
   try {
-    return toMatchSnapshot.call(this, jsonStdin(dot));
+    return toMatchSnapshot.call(this, dotJsonStdin(dot));
   } catch (error) {
     return {
       pass: false,

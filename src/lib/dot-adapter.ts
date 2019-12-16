@@ -7,10 +7,10 @@ function execCommand(command: string, input: string): Buffer {
   });
 }
 
-export function dotStdin(input: string): string {
-  return execCommand('dot -Tdot', input).toString();
+export function dotPlainStdin(input: string): string {
+  return execCommand('dot -Tplain', input).toString();
 }
 
-export function jsonStdin(input: string): object {
+export function dotJsonStdin(input: string): object {
   return JSON.parse(execCommand('dot -Tdot_json', input).toString());
 }
