@@ -83,6 +83,19 @@ describe('toBeValidDotAndMatchSnapshot test', () => {
 });
 ```
 
+### `toMatchDotJsonSnapshot`
+
+```typescript
+describe('toMatchDotJsonSnapshot test', () => {
+  test('matcher works', () => {
+    const dot = 'digraph g { a -> b; }';
+    expect(dot).toMatchDotJsonSnapshot();
+  });
+});
+```
+
+> It depends on the JSON output format added in Graphviz 2.40.0.
+
 ## License
 
 This software is released under the MIT License, see LICENSE.

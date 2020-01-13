@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dotJsonStdin test valid dot 1`] = `
+Object {
+  "_subgraph_cnt": 0,
+  "directed": true,
+  "edges": Array [
+    Object {
+      "_gvid": 0,
+      "head": 1,
+      "tail": 0,
+    },
+  ],
+  "name": "g",
+  "objects": Array [
+    Object {
+      "_gvid": 0,
+      "label": "\\\\N",
+      "name": "a",
+    },
+    Object {
+      "_gvid": 1,
+      "label": "\\\\N",
+      "name": "b",
+    },
+  ],
+  "strict": false,
+}
+`;
