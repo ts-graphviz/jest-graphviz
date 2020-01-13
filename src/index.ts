@@ -7,11 +7,19 @@ declare global {
     // tslint:disable-next-line: interface-name
     interface Expect {
       toMatchDotJsonSnapshot<T>(): JestMatchers<T>;
+      /**
+       * @description
+       * It depends on the JSON output format added in Graphviz 2.40.0.
+       */
       toBeValidDotAndMatchSnapshot<T>(): JestMatchers<T>;
       toBeValidDot<T>(): JestMatchers<T>;
     }
     // tslint:disable-next-line: interface-name
     interface Matchers<R, T> {
+      /**
+       * @description
+       * It depends on the JSON output format added in Graphviz 2.40.0.
+       */
       toMatchDotJsonSnapshot(): R;
       toBeValidDotAndMatchSnapshot(): R;
       toBeValidDot(): R;

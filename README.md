@@ -94,6 +94,8 @@ describe('toMatchDotJsonSnapshot test', () => {
 });
 ```
 
+> It depends on the JSON output format added in Graphviz 2.40.0.
+
 ## License
 
 This software is released under the MIT License, see LICENSE.
