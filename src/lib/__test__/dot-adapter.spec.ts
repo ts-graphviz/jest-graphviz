@@ -16,7 +16,10 @@ describe('checkValidDot test', () => {
   });
 });
 
-describe('dotJsonStdin test', () => {
+const runOnWindows = process.platform === 'win32';
+// Skip test on windows
+// NOTE: Not support output json format on Graphviz windows statable now.
+(runOnWindows ? describe.skip : describe)('dotJsonStdin test', () => {
   test('valid dot', () => {
     const dot = 'digraph g { a -> b; }';
     const result = dotJsonStdin(dot);
