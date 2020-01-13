@@ -10,11 +10,12 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "rollup -c",
     "lint": "tslint --project ./tsconfig.json"
   },
   "license": "MIT",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "dependencies": {
     "@types/jest": "^24.0.22",
@@ -22,8 +23,12 @@
     "jest-snapshot": "^24.9.0"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.0.0",
     "@types/node": "^13.1.6",
     "prettier": "^1.19.1",
+    "rollup": "^1.29.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-typescript2": "^0.25.3",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",

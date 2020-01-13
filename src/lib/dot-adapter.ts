@@ -1,7 +1,7 @@
-import { execSync } from 'child_process';
+import cp from 'child_process';
 
 function execCommand(command: string, input: string): Buffer {
-  return execSync(command, {
+  return cp.execSync(command, {
     stdio: 'pipe',
     input,
   });
