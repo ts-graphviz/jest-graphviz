@@ -1,4 +1,7 @@
+import { skipOn } from '@kamiazya/jest-dynamic';
 import { checkValidDot, dotJsonStdin } from '../dot-adapter';
+
+const skipOnWindows = skipOn('win32');
 
 describe('checkValidDot test', () => {
   test('valid dot', () => {
@@ -16,10 +19,9 @@ describe('checkValidDot test', () => {
   });
 });
 
-const runOnWindows = process.platform === 'win32';
 // Skip test on windows
 // NOTE: Not support output json format on Graphviz windows statable now.
-(runOnWindows ? describe.skip : describe)('dotJsonStdin test', () => {
+skipOnWindows.describe('dotJsonStdin test', () => {
   test('valid dot', () => {
     const dot = 'digraph g { a -> b; }';
     const result = dotJsonStdin(dot);
