@@ -1,12 +1,13 @@
+import { skipOn } from '@kamiazya/jest-dynamic';
 import '../index';
+
+const skipOnWindows = skipOn('win32');
+
 describe('public api', () => {
-  const runOnWindows = process.platform === 'win32';
-
   const dot = 'digraph g { a -> b; }';
-
   // Skip test on windows
   // NOTE: Not support output json format on Graphviz windows statable now.
-  (runOnWindows ? test.skip : test)('toMatchDotJsonSnapshot', () => {
+  skipOnWindows.test('toMatchDotJsonSnapshot', () => {
     expect(dot).toMatchDotJsonSnapshot();
   });
 

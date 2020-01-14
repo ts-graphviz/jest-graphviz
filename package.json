@@ -22,6 +22,7 @@
     "jest-snapshot": "^24.9.0"
   },
   "devDependencies": {
+    "@kamiazya/jest-dynamic": "^0.0.1",
     "@types/node": "^13.1.6",
     "prettier": "^1.19.1",
     "ts-jest": "^24.1.0",
