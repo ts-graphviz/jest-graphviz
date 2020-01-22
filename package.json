@@ -19,7 +19,7 @@
   "dependencies": {
     "@types/jest": "^24.0.22",
     "jest": "^24.9.0",
-    "jest-snapshot": "^24.9.0"
+    "jest-snapshot": "^25.1.0"
   },
   "devDependencies": {
     "@kamiazya/jest-dynamic": "^0.0.1",
