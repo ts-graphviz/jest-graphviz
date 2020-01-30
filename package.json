@@ -17,7 +17,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@types/jest": "^24.0.22",
+    "@types/jest": "^25.1.1",
     "jest": "^24.9.0",
     "jest-snapshot": "^24.9.0"
   },
