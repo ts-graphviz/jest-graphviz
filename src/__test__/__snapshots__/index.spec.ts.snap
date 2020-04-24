@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`public api toBeValidDotAndMatchSnapshot 1`] = `"digraph g { a -> b; }"`;
+exports[`public api toBeValidDotAndMatchSnapshot 1`] = `digraph g { a -> b; }`;
 
 exports[`public api toMatchDotJsonSnapshot 1`] = `
 Object {
