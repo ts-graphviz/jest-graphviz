@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "es3",
-    "module": "commonjs",
     "strict": true,
     "lib": [
       "esnext"
@@ -17,5 +16,8 @@
   },
   "include": [
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/__test__/**/*"
   ]
 }
