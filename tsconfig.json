@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "es3",
-    "module": "ESNext",
     "strict": true,
     "lib": [
       "esnext"
