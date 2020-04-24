@@ -1,6 +1,6 @@
 {
   "name": "jest-graphviz",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "kamiazya <yuki@kamiazya.tech>",
   "description": "A plugin for jest that supports graphviz integration.",
   "keywords": [
@@ -25,8 +25,8 @@
     "jest": "^24.9.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^7.0.0",
     "@kamiazya/jest-dynamic": "^0.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
     "@types/node": "^13.1.6",
     "jest-snapshot": "^25.4.0",
     "prettier": "^1.19.1",
