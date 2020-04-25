@@ -24,5 +24,6 @@ export default {
   ],
   external: [
     'jest-snapshot',
+    'child_process',
   ],
 }
