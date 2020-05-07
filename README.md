@@ -96,6 +96,17 @@ describe('toMatchDotJsonSnapshot test', () => {
 
 > It depends on the JSON output format added in Graphviz 2.40.0.
 
+## See Also
+
+Graphviz-dot Test and Integration
+
+- [ts-graphviz](https://github.com/ts-graphviz/ts-graphviz)
+  - Graphviz library for TypeScript.
+- [@ts-graphviz/react](https://github.com/ts-graphviz/react)
+  - Graphviz-dot Renderer for React.
+- [setup-graphviz](https://github.com/ts-graphviz/setup-graphviz)
+  - GitHub Action to set up Graphviz cross-platform(Linux, macOS, Windows).
+
 ## License
 
 This software is released under the MIT License, see LICENSE.
