@@ -18,7 +18,7 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "jest-snapshot": ">=24"
+    "jest-snapshot": ">=24 || >=25"
   },
   "dependencies": {
     "@types/jest": "^24.0.22",
