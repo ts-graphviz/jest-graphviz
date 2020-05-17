@@ -18,22 +18,21 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "jest-snapshot": ">=24 || >=25"
-  },
-  "dependencies": {
-    "@types/jest": "^24.0.22",
-    "jest": "^24.9.0"
+    "jest": "*",
+    "jest-snapshot": "*"
   },
   "devDependencies": {
     "@kamiazya/jest-dynamic": "^0.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@types/jest": "^25.2.2",
     "@types/node": "^13.1.6",
+    "jest": "^26.0.1",
     "jest-snapshot": "^25.4.0",
     "prettier": "^1.19.1",
     "rollup": "^1.29.0",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-typescript2": "^0.25.3",
-    "ts-jest": "^24.1.0",
+    "ts-jest": "^26.0.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
