@@ -18,8 +18,8 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "jest": "*",
-    "jest-snapshot": "*"
+    "jest": ">=26",
+    "jest-snapshot": ">=26"
   },
   "devDependencies": {
     "@kamiazya/jest-dynamic": "^0.0.1",
@@ -27,7 +27,7 @@
     "@types/jest": "^25.2.2",
     "@types/node": "^13.1.6",
     "jest": "^26.0.1",
-    "jest-snapshot": "^25.4.0",
+    "jest-snapshot": "^26.0.1",
     "prettier": "^1.19.1",
     "rollup": "^1.29.0",
     "rollup-plugin-node-builtins": "^2.1.2",
