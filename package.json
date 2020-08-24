@@ -29,7 +29,7 @@
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@types/node": "^13.1.6",
     "jest-snapshot": "^25.4.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.1.0",
     "rollup": "^1.29.0",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-typescript2": "^0.25.3",
