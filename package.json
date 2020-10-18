@@ -27,7 +27,7 @@
   "devDependencies": {
     "@kamiazya/jest-dynamic": "^0.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
-    "@types/node": "^13.1.6",
+    "@types/node": "^14.11.10",
     "jest-snapshot": "^25.4.0",
     "prettier": "^1.19.1",
     "rollup": "^1.29.0",
