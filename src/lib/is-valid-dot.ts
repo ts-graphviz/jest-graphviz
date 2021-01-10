@@ -1,10 +1,10 @@
-import { dotStdin } from './dot-adapter';
+import { dotJsonStdin } from './dot-adapter';
 
 export function isValidDot(dot: string): jest.CustomMatcherResult {
   let pass: boolean;
   let message: string = 'expected value to be valid dot format.';
   try {
-    dotStdin(dot);
+    dotJsonStdin(dot);
     pass = true;
   } catch (error) {
     pass = false;
