@@ -7,13 +7,13 @@ function execCommand(command: string, input: string): Buffer {
   });
 }
 
-export function dotPlainStdin(input: string): Buffer {
-  return execCommand('dot -Tplain', input);
+export function dotStdin(input: string): Buffer {
+  return execCommand('dot', input);
 }
 
 export function checkValidDot(dot: string): void {
   try {
-    dotPlainStdin(dot);
+    dotStdin(dot);
   } catch (error) {
     throw error;
   }
