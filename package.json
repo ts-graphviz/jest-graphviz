@@ -33,7 +33,7 @@
     "prettier": "^1.19.1",
     "rollup": "^2.36.1",
     "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-typescript2": "^0.29.0",
+    "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^26.4.4",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
