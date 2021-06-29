@@ -21,7 +21,7 @@
     "jest": ">=26"
   },
   "dependencies": {
-    "jest-snapshot": "^26.6.2",
+    "jest-snapshot": "^27.0.6",
     "tslib": "^2.1.0"
   },
   "devDependencies": {
