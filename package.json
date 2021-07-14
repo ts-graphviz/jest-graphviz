@@ -28,7 +28,7 @@
     "@kamiazya/jest-dynamic": "^0.1.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.20",
+    "@types/node": "^16.3.2",
     "jest": "^26.6.3",
     "prettier": "^1.19.1",
     "rollup": "^2.36.1",
