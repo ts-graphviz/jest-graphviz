@@ -8,6 +8,7 @@ describe('public api', () => {
   // Skip test on windows
   // NOTE: Not support output json format on Graphviz windows statable now.
   skipOnWindows.test('toMatchDotJsonSnapshot', () => {
+    // eslint-disable-next-line jest/no-standalone-expect
     expect(dot).toMatchDotJsonSnapshot();
   });
 

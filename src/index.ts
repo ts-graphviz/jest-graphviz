@@ -14,7 +14,7 @@ declare global {
       toBeValidDotAndMatchSnapshot<T>(): JestMatchers<T>;
       toBeValidDot<T>(): JestMatchers<T>;
     }
-    // tslint:disable-next-line: interface-name
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     interface Matchers<R, T> {
       /**
        * @description
