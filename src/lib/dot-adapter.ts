@@ -19,6 +19,7 @@ export function checkValidDot(dot: string): void {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function dotJsonStdin(input: string): object {
   return JSON.parse(execCommand('dot -Tdot_json', input).toString());
 }

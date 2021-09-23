@@ -2,7 +2,7 @@ import { dotPlainStdin } from './dot-adapter';
 
 export function isValidDot(dot: string): jest.CustomMatcherResult {
   let pass: boolean;
-  let message: string = 'expected value to be valid dot format.';
+  let message = 'expected value to be valid dot format.';
   try {
     dotPlainStdin(dot);
     pass = true;
