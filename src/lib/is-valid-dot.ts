@@ -8,7 +8,7 @@ export function isValidDot(dot: string): jest.CustomMatcherResult {
     pass = true;
   } catch (error) {
     pass = false;
-    message = error.stderr.toString();
+    message = (error as { stderr: Buffer }).stderr.toString();
   }
   return {
     pass,
