@@ -16,7 +16,7 @@ const options = [
       },
       {
         format: 'esm',
-        file: pkg.module,
+        file: pkg.exports.import,
       },
     ],
     plugins: [
